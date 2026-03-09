@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Design System — PTM Labels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+  <style>
+    /* Reference page only — not part of the design system */
+    .ds-section { border-bottom: 1px solid var(--gray-200); }
+    .ds-label {
+      font-size: 0.6875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: var(--space-xs);
+    }
+    .ds-swatch {
+      width: 64px;
+      height: 64px;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--gray-200);
+    }
+    .ds-swatch-row {
+      display: flex;
+      gap: var(--space-xs);
+      flex-wrap: wrap;
+      margin-bottom: var(--space-md);
+    }
+    .ds-swatch-item {
+      text-align: center;
+    }
+    .ds-swatch-item small {
+      display: block;
+      margin-top: var(--space-2xs);
+      font-size: 0.6875rem;
+      color: var(--text-muted);
+    }
+    .ds-spacing-bar {
+      background: var(--primary-50);
+      border: 1px solid var(--primary-200);
+      height: 24px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      padding-left: var(--space-xs);
+      font-size: 0.6875rem;
+      color: var(--primary);
+      font-weight: 600;
+      margin-bottom: var(--space-xs);
+    }
+    .ds-row {
+      display: flex;
+      gap: var(--space-md);
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- Header -->
+    <header class="header">
+      <div class="container">
+        <a href="index.html" class="header__logo" style="font-weight:700; font-size:1.125rem; color: var(--primary);">
+          PTM Design System
+        </a>
+        <nav class="header__nav">
+          <a href="#colors">Colors</a>
+          <a href="#typography">Type</a>
+          <a href="#spacing">Spacing</a>
+          <a href="#buttons">Buttons</a>
+          <a href="#cards">Cards</a>
+          <a href="#forms">Forms</a>
+        </nav>
+        <button class="header__toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+
+    <!-- ===== COLORS ===== -->
+    <section id="colors" class="section ds-section">
+      <div class="container">
+        <span class="section-label">Design Tokens</span>
+        <h2 class="section-title">Colors</h2>
+        <p class="section-subtitle">Warm neutrals + deep green primary. The warm tone avoids the cold corporate feel of the old site.</p>
+
+        <h4 style="margin-bottom: var(--space-md);">Primary Green</h4>
+        <div class="ds-swatch-row">
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--primary-50);"></div><small>50</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--primary-100);"></div><small>100</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--primary-200);"></div><small>200</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--primary-300);"></div><small>300</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--primary-400);"></div><small>400</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--primary-500); border-color: transparent;"></div><small>500 *</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--primary-600); border-color: transparent;"></div><small>600</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--primary-700); border-color: transparent;"></div><small>700</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--primary-800); border-color: transparent;"></div><small>800</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--primary-900); border-color: transparent;"></div><small>900</small></div>
+        </div>
+
+        <h4 style="margin-bottom: var(--space-md);">Warm Neutrals</h4>
+        <div class="ds-swatch-row">
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--gray-50);"></div><small>50</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--gray-100);"></div><small>100</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--gray-200);"></div><small>200</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--gray-300);"></div><small>300</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--gray-400); border-color: transparent;"></div><small>400</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--gray-500); border-color: transparent;"></div><small>500</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--gray-600); border-color: transparent;"></div><small>600</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--gray-700); border-color: transparent;"></div><small>700</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--gray-800); border-color: transparent;"></div><small>800</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--gray-900); border-color: transparent;"></div><small>900</small></div>
+        </div>
+
+        <h4 style="margin-bottom: var(--space-md);">Status &amp; Accent</h4>
+        <div class="ds-swatch-row">
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--accent); border-color: transparent;"></div><small>Accent</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--success); border-color: transparent;"></div><small>Success</small></div>
+          <div class="ds-swatch-item"><div class="ds-swatch" style="background: var(--error); border-color: transparent;"></div><small>Error</small></div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== TYPOGRAPHY ===== -->
+    <section id="typography" class="section ds-section">
+      <div class="container">
+        <span class="section-label">Typography</span>
+        <h2 class="section-title">Type Scale</h2>
+        <p class="section-subtitle">Inter font family. Headings use tight letter-spacing for a modern editorial feel.</p>
+
+        <div style="margin-bottom: var(--space-2xl);">
+          <p class="ds-label">H1 — 3.25rem / 52px</p>
+          <h1>Premium Label Solutions</h1>
+        </div>
+        <div style="margin-bottom: var(--space-2xl);">
+          <p class="ds-label">H2 — 2.25rem / 36px</p>
+          <h2>Our Products</h2>
+        </div>
+        <div style="margin-bottom: var(--space-2xl);">
+          <p class="ds-label">H3 — 1.5rem / 24px</p>
+          <h3>Self Adhesive Labels</h3>
+        </div>
+        <div style="margin-bottom: var(--space-2xl);">
+          <p class="ds-label">H4 — 1.25rem / 20px</p>
+          <h4>Quality You Can Trust</h4>
+        </div>
+        <div style="margin-bottom: var(--space-2xl);">
+          <p class="ds-label">Body — 1rem / 16px</p>
+          <p>PTM Labels is a Malaysian manufacturer of self-adhesive labels and shrink sleeve labels, established in 2002. We serve industries including food, pharmaceuticals, cosmetics, and logistics.</p>
+        </div>
+        <div style="margin-bottom: var(--space-2xl);">
+          <p class="ds-label">Large Text — 1.125rem / 18px</p>
+          <p class="text-lg">Perfect for section subtitles and lead paragraphs that need slightly more emphasis than body text.</p>
+        </div>
+        <div>
+          <p class="ds-label">Small Text — 0.875rem / 14px</p>
+          <p class="text-sm" style="color: var(--text-light);">Used for captions, breadcrumbs, footer links, and helper text under form inputs.</p>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== SPACING ===== -->
+    <section id="spacing" class="section ds-section">
+      <div class="container">
+        <span class="section-label">Layout</span>
+        <h2 class="section-title">Spacing Scale</h2>
+        <p class="section-subtitle">Built on a 4px grid. Use consistent spacing to create visual rhythm.</p>
+
+        <div style="max-width: 600px;">
+          <div class="ds-spacing-bar" style="width: 4px; min-width: 100px;">2xs — 4px</div>
+          <div class="ds-spacing-bar" style="width: 8px; min-width: 110px;">xs — 8px</div>
+          <div class="ds-spacing-bar" style="width: 12px; min-width: 120px;">sm — 12px</div>
+          <div class="ds-spacing-bar" style="width: 16px; min-width: 130px;">md — 16px (base)</div>
+          <div class="ds-spacing-bar" style="width: 24px; min-width: 140px;">lg — 24px</div>
+          <div class="ds-spacing-bar" style="width: 32px; min-width: 150px;">xl — 32px</div>
+          <div class="ds-spacing-bar" style="width: 48px; min-width: 160px;">2xl — 48px</div>
+          <div class="ds-spacing-bar" style="width: 64px; min-width: 180px;">3xl — 64px</div>
+          <div class="ds-spacing-bar" style="width: 80px; min-width: 200px;">4xl — 80px (sections)</div>
+          <div class="ds-spacing-bar" style="width: 112px; min-width: 220px;">5xl — 112px (hero)</div>
+        </div>
+
+        <h4 style="margin-top: var(--space-2xl); margin-bottom: var(--space-md);">Section Spacing Rules</h4>
+        <table style="font-size: 0.875rem; border-collapse: collapse; width: 100%; max-width: 600px;">
+          <thead>
+            <tr style="border-bottom: 2px solid var(--gray-200); text-align: left;">
+              <th style="padding: var(--space-xs) var(--space-md) var(--space-xs) 0;">Context</th>
+              <th style="padding: var(--space-xs) var(--space-md);">Class</th>
+              <th style="padding: var(--space-xs) 0;">Padding</th>
+            </tr>
+          </thead>
+          <tbody style="color: var(--text-light);">
+            <tr style="border-bottom: 1px solid var(--gray-100);"><td style="padding: var(--space-xs) var(--space-md) var(--space-xs) 0;">Hero sections</td><td style="padding: var(--space-xs) var(--space-md);"><code>.section--spacious</code></td><td style="padding: var(--space-xs) 0;">112px</td></tr>
+            <tr style="border-bottom: 1px solid var(--gray-100);"><td style="padding: var(--space-xs) var(--space-md) var(--space-xs) 0;">Standard sections</td><td style="padding: var(--space-xs) var(--space-md);"><code>.section</code></td><td style="padding: var(--space-xs) 0;">80px</td></tr>
+            <tr style="border-bottom: 1px solid var(--gray-100);"><td style="padding: var(--space-xs) var(--space-md) var(--space-xs) 0;">Tight sections</td><td style="padding: var(--space-xs) var(--space-md);"><code>.section--compact</code></td><td style="padding: var(--space-xs) 0;">64px</td></tr>
+            <tr><td style="padding: var(--space-xs) var(--space-md) var(--space-xs) 0;">Between blocks</td><td style="padding: var(--space-xs) var(--space-md);"><code>--space-2xl</code></td><td style="padding: var(--space-xs) 0;">48px</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+
+    <!-- ===== BUTTONS ===== -->
+    <section id="buttons" class="section ds-section">
+      <div class="container">
+        <span class="section-label">Components</span>
+        <h2 class="section-title">Buttons</h2>
+        <p class="section-subtitle">Three sizes, four variants. Every button is at least 44px tall for easy mobile tapping.</p>
+
+        <h4 style="margin-bottom: var(--space-md);">Variants</h4>
+        <div class="ds-row" style="margin-bottom: var(--space-2xl);">
+          <button class="btn btn--primary">Primary</button>
+          <button class="btn btn--outline">Outline</button>
+          <button class="btn btn--ghost">Ghost</button>
+        </div>
+
+        <h4 style="margin-bottom: var(--space-md);">Sizes</h4>
+        <div class="ds-row" style="margin-bottom: var(--space-2xl); align-items: center;">
+          <button class="btn btn--primary btn--small">Small — 36px</button>
+          <button class="btn btn--primary">Default — 44px</button>
+          <button class="btn btn--primary btn--large">Large — 52px</button>
+        </div>
+
+        <h4 style="margin-bottom: var(--space-md);">On Dark Background</h4>
+        <div style="background: var(--gray-900); padding: var(--space-xl); border-radius: var(--radius-lg); margin-bottom: var(--space-2xl);">
+          <div class="ds-row">
+            <button class="btn btn--primary">Primary</button>
+            <button class="btn btn--white">White</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== CARDS ===== -->
+    <section id="cards" class="section ds-section section--gray">
+      <div class="container">
+        <span class="section-label">Components</span>
+        <h2 class="section-title">Cards</h2>
+        <p class="section-subtitle">Three styles: default (subtle shadow), flat (border only), and elevated (stronger shadow).</p>
+
+        <div class="grid grid--3">
+          <div class="card">
+            <div class="card__image" style="background: linear-gradient(135deg, var(--primary-100), var(--primary-200));"></div>
+            <div class="card__body">
+              <h3 class="card__title">Default Card</h3>
+              <p class="card__text">Subtle shadow at rest, lifts on hover. Use for product cards, service blocks.</p>
+              <a href="#" class="card__link">Learn more &rarr;</a>
+            </div>
+          </div>
+          <div class="card card--flat">
+            <div class="card__image" style="background: linear-gradient(135deg, var(--gray-100), var(--gray-200));"></div>
+            <div class="card__body">
+              <h3 class="card__title">Flat Card</h3>
+              <p class="card__text">Border only, no shadow at rest. Use for grids where shadow would be too heavy.</p>
+              <a href="#" class="card__link">View details &rarr;</a>
+            </div>
+          </div>
+          <div class="card card--elevated">
+            <div class="card__image" style="background: linear-gradient(135deg, #fef3c7, #fde68a);"></div>
+            <div class="card__body">
+              <h3 class="card__title">Elevated Card</h3>
+              <p class="card__text">Stronger shadow. Use for featured items or CTAs that need more prominence.</p>
+              <a href="#" class="card__link">Get started &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== FEATURES ===== -->
+    <section class="section ds-section">
+      <div class="container">
+        <span class="section-label">Components</span>
+        <h2 class="section-title">Feature Blocks</h2>
+        <p class="section-subtitle">Icon + title + text. Use centered for grids, left-aligned for detailed descriptions.</p>
+
+        <div class="grid grid--3" style="margin-bottom: var(--space-2xl);">
+          <div class="feature">
+            <div class="feature__icon">&#9733;</div>
+            <h3 class="feature__title">ISO Certified</h3>
+            <p class="feature__text">ISO 9001:2015 and ISO 14001:2015 certified for quality and environment.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">&#9881;</div>
+            <h3 class="feature__title">Advanced Printing</h3>
+            <p class="feature__text">Flexo, digital, and letterpress capabilities under one roof.</p>
+          </div>
+          <div class="feature">
+            <div class="feature__icon">&#9201;</div>
+            <h3 class="feature__title">24-Hour Operations</h3>
+            <p class="feature__text">Round-the-clock production ensures your orders ship on schedule.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== BADGES ===== -->
+    <section class="section ds-section section--gray">
+      <div class="container">
+        <span class="section-label">Components</span>
+        <h2 class="section-title">Badges &amp; Stats</h2>
+        <p class="section-subtitle">Small labels for categorization. Stats for highlighting key numbers.</p>
+
+        <h4 style="margin-bottom: var(--space-md);">Badges</h4>
+        <div class="ds-row" style="margin-bottom: var(--space-2xl);">
+          <span class="badge">Popular</span>
+          <span class="badge badge--accent">New</span>
+          <span class="badge badge--gray">Coming Soon</span>
+        </div>
+
+        <h4 style="margin-bottom: var(--space-md);">Stat Blocks</h4>
+        <div class="grid grid--4">
+          <div class="stat">
+            <div class="stat__number">20+</div>
+            <div class="stat__label">Years Experience</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">24/7</div>
+            <div class="stat__label">Operations</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">3</div>
+            <div class="stat__label">Flexo Presses</div>
+          </div>
+          <div class="stat">
+            <div class="stat__number">ISO</div>
+            <div class="stat__label">Certified</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== FORMS ===== -->
+    <section id="forms" class="section ds-section">
+      <div class="container">
+        <span class="section-label">Components</span>
+        <h2 class="section-title">Forms</h2>
+        <p class="section-subtitle">48px input height for easy tapping. Green focus ring, red error state, green success state.</p>
+
+        <div style="max-width: 480px;">
+          <div class="form-group">
+            <label for="ds-name">Default Input</label>
+            <input type="text" id="ds-name" placeholder="Your full name">
+          </div>
+
+          <div class="form-group has-error">
+            <label for="ds-email">Error State</label>
+            <input type="email" id="ds-email" value="invalid-email" placeholder="you@company.com">
+            <p class="form-group__error">Please enter a valid email address.</p>
+          </div>
+
+          <div class="form-group has-success">
+            <label for="ds-phone">Success State</label>
+            <input type="tel" id="ds-phone" value="+60 12-345 6789" placeholder="+60 12-345 6789">
+          </div>
+
+          <div class="form-group">
+            <label for="ds-product">Select / Dropdown</label>
+            <select id="ds-product">
+              <option value="">Select a product...</option>
+              <option value="adhesive">Self Adhesive Labels</option>
+              <option value="shrink">Shrink Sleeve Labels</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="ds-message">Textarea</label>
+            <textarea id="ds-message" placeholder="Describe your requirements..."></textarea>
+            <p class="form-group__help">Minimum 20 characters.</p>
+          </div>
+
+          <button class="btn btn--primary btn--large btn--full">Submit Enquiry</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ===== SECTION BACKGROUNDS ===== -->
+    <section class="section ds-section">
+      <div class="container">
+        <span class="section-label">Layout</span>
+        <h2 class="section-title">Section Backgrounds</h2>
+        <p class="section-subtitle">Alternate between white and gray sections for visual rhythm. Use dark/primary for CTAs.</p>
+      </div>
+    </section>
+
+    <section class="section--compact section--gray">
+      <div class="container text-center" style="padding: var(--space-2xl) 0;">
+        <p class="ds-label">section--gray</p>
+        <p style="margin:0;">Light gray background for alternating sections</p>
+      </div>
+    </section>
+
+    <section class="section--compact section--dark">
+      <div class="container text-center" style="padding: var(--space-2xl) 0;">
+        <p class="ds-label" style="color: var(--gray-400);">section--dark</p>
+        <p style="color: var(--gray-300); margin:0;">Dark background for footer-adjacent CTAs or testimonial sections</p>
+      </div>
+    </section>
+
+    <section class="section--compact section--primary">
+      <div class="container text-center" style="padding: var(--space-2xl) 0;">
+        <p class="ds-label" style="color: var(--primary-200);">section--primary</p>
+        <p style="color: rgba(255,255,255,0.85); margin:0;">Green background for strong call-to-action sections</p>
+      </div>
+    </section>
+
+
+    <!-- ===== COLOR USAGE RULES ===== -->
+    <section class="section">
+      <div class="container">
+        <span class="section-label">Guidelines</span>
+        <h2 class="section-title">Usage Rules</h2>
+
+        <div class="grid grid--2" style="gap: var(--space-2xl);">
+          <div>
+            <h4 style="margin-bottom: var(--space-md);">Color Rules</h4>
+            <ul style="font-size: 0.875rem; color: var(--text-light); line-height: 2;">
+              <li>&#10003; Use <strong>primary-500</strong> for buttons, links, and icons</li>
+              <li>&#10003; Use <strong>primary-50</strong> for light backgrounds and icon containers</li>
+              <li>&#10003; Use <strong>gray-900</strong> for headings, <strong>gray-500</strong> for body text</li>
+              <li>&#10003; Use <strong>gray-50</strong> to alternate section backgrounds</li>
+              <li>&#10007; Never use primary green for large background areas (use section--primary sparingly)</li>
+              <li>&#10007; Never use gray-400 or lighter for body text (fails contrast)</li>
+            </ul>
+          </div>
+          <div>
+            <h4 style="margin-bottom: var(--space-md);">Spacing Rules</h4>
+            <ul style="font-size: 0.875rem; color: var(--text-light); line-height: 2;">
+              <li>&#10003; Use <strong>space-lg (24px)</strong> between related elements</li>
+              <li>&#10003; Use <strong>space-2xl (48px)</strong> between content blocks</li>
+              <li>&#10003; Use <strong>.section (80px)</strong> between page sections</li>
+              <li>&#10003; Alternate <strong>white / gray</strong> sections for rhythm</li>
+              <li>&#10007; Never use less than 16px margin between text elements</li>
+              <li>&#10007; Never stack two gray sections without a white section between</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__bottom" style="border-top: none;">
+          <span>Design System Reference — Not a public page</span>
+          <div>
+            <a href="index.html">Back to Homepage</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

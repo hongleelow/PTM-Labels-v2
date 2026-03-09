@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request a custom label quote from PTM Labels. Tell us about your project and receive a tailored quote within one business day.">
+  <title>Request a Quote — PTM Labels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="page">
+
+    <!-- NAVBAR -->
+    <header class="header" role="banner">
+      <div class="container">
+        <a href="index.html" class="header__logo" aria-label="PTM Labels — Home">
+          <img src="assets/images/logo.png" alt="PTM Labels" width="140" height="40">
+        </a>
+        <nav class="header__nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+          <a href="request-quote.html" class="header__cta">Get a Quote</a>
+        </nav>
+        <button class="header__toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__content">
+          <p class="page-hero__breadcrumb">
+            <a href="index.html">Home</a><span class="sep">/</span>Request a Quote
+          </p>
+          <h1 class="page-hero__title">Get a Custom Quote</h1>
+          <p class="page-hero__subtitle">Tell us about your labelling project and our team will prepare a detailed, no-obligation quote within one business day.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE FORM + TRUST SIDEBAR -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--60-40 grid--gap-2xl grid--align-start">
+
+          <!-- Quote Form -->
+          <div>
+            <div class="section-heading section-heading--left">
+              <span class="section-heading__label">Your Project Details</span>
+              <h2 class="section-heading__title">Tell Us What You Need</h2>
+              <p class="section-heading__subtitle">The more detail you provide, the more accurate your quote will be. All fields marked with * are required.</p>
+            </div>
+
+            <form id="quote-form">
+              <!-- Contact Info -->
+              <fieldset class="form-fieldset">
+                <legend class="form-fieldset__legend">Contact Information</legend>
+
+                <div class="grid grid--2">
+                  <div class="form-group">
+                    <label for="q-name">Full Name *</label>
+                    <input type="text" id="q-name" name="name" required placeholder="Your full name">
+                    <p class="form-group__error">Please enter your name.</p>
+                  </div>
+                  <div class="form-group">
+                    <label for="q-company">Company Name *</label>
+                    <input type="text" id="q-company" name="company" required placeholder="Your company name">
+                    <p class="form-group__error">Please enter your company name.</p>
+                  </div>
+                </div>
+
+                <div class="grid grid--2">
+                  <div class="form-group">
+                    <label for="q-email">Email Address *</label>
+                    <input type="email" id="q-email" name="email" required placeholder="you@company.com">
+                    <p class="form-group__error">Please enter a valid email address.</p>
+                  </div>
+                  <div class="form-group">
+                    <label for="q-phone">Phone Number</label>
+                    <input type="tel" id="q-phone" name="phone" placeholder="+60 12-345 6789">
+                    <p class="form-group__hint">Include country code for international calls.</p>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Project Details -->
+              <fieldset class="form-fieldset">
+                <legend class="form-fieldset__legend">Project Details</legend>
+
+                <div class="grid grid--2">
+                  <div class="form-group">
+                    <label for="q-product">Label Type *</label>
+                    <select id="q-product" name="product_type" required>
+                      <option value="" disabled selected>Select a label type</option>
+                      <option value="self-adhesive">Self Adhesive Labels</option>
+                      <option value="shrink-sleeve">Shrink Sleeve Labels</option>
+                      <option value="variable-data">Variable Data Printing</option>
+                      <option value="peel-reveal">Peel &amp; Reveal Labels</option>
+                      <option value="pop-up">Pop Up Labels</option>
+                      <option value="other">Other / Not Sure</option>
+                    </select>
+                    <p class="form-group__error">Please select a label type.</p>
+                  </div>
+                  <div class="form-group">
+                    <label for="q-quantity">Estimated Quantity</label>
+                    <input type="text" id="q-quantity" name="quantity" placeholder="e.g. 10,000 pcs per run">
+                    <p class="form-group__hint">Approximate quantity per order or per month.</p>
+                  </div>
+                </div>
+
+                <div class="grid grid--2">
+                  <div class="form-group">
+                    <label for="q-size">Label Size / Dimensions</label>
+                    <input type="text" id="q-size" name="size" placeholder="e.g. 80mm x 120mm">
+                    <p class="form-group__hint">Width × Height, or provide a reference later.</p>
+                  </div>
+                  <div class="form-group">
+                    <label for="q-material">Material Preference</label>
+                    <select id="q-material" name="material">
+                      <option value="" disabled selected>Select material (if known)</option>
+                      <option value="art-paper">Art Paper</option>
+                      <option value="mirrorkote">Mirrorkote</option>
+                      <option value="pp-synthetic">PP / Synthetic</option>
+                      <option value="pet">PET / Polyester</option>
+                      <option value="bopp">BOPP</option>
+                      <option value="pvc-shrink">PVC Shrink Film</option>
+                      <option value="other">Other / Need Advice</option>
+                    </select>
+                    <p class="form-group__hint">Not sure? We'll recommend the best option.</p>
+                  </div>
+                </div>
+
+                <div class="grid grid--2">
+                  <div class="form-group">
+                    <label for="q-industry">Industry</label>
+                    <select id="q-industry" name="industry">
+                      <option value="" disabled selected>Select your industry</option>
+                      <option value="food-beverage">Food &amp; Beverage</option>
+                      <option value="pharmaceutical">Pharmaceutical</option>
+                      <option value="cosmetic">Cosmetics &amp; Personal Care</option>
+                      <option value="chemical">Chemical &amp; Industrial</option>
+                      <option value="electronics">Electronics</option>
+                      <option value="retail">Retail &amp; Consumer Goods</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label for="q-timeline">Timeline</label>
+                    <select id="q-timeline" name="timeline">
+                      <option value="" disabled selected>When do you need this?</option>
+                      <option value="urgent">Urgent — Within 1 week</option>
+                      <option value="2-weeks">Within 2 weeks</option>
+                      <option value="1-month">Within 1 month</option>
+                      <option value="flexible">Flexible / No rush</option>
+                      <option value="recurring">Recurring / Ongoing supply</option>
+                    </select>
+                  </div>
+                </div>
+              </fieldset>
+
+              <!-- Additional Info -->
+              <fieldset class="form-fieldset">
+                <legend class="form-fieldset__legend">Additional Information</legend>
+
+                <div class="form-group">
+                  <label for="q-details">Project Details / Special Requirements</label>
+                  <textarea id="q-details" name="details" rows="5" placeholder="Describe your project — finishing options, colour requirements, application surface, special features, or anything else we should know..."></textarea>
+                  <p class="form-group__hint">Feel free to mention finishing options (matte, gloss, foil), variable data needs, or regulatory requirements.</p>
+                </div>
+
+                <div class="form-group">
+                  <label for="q-file" style="cursor: pointer;">
+                    <span>Attach Files</span>
+                  </label>
+                  <div class="upload-zone" onclick="document.getElementById('q-file').click();">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#a8a29e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                    <p class="upload-zone__text">Click to upload artwork, reference images, or specifications</p>
+                    <p class="upload-zone__hint">PDF, AI, PSD, PNG, JPG — Max 10 MB per file</p>
+                  </div>
+                  <input type="file" id="q-file" name="file" multiple accept=".pdf,.ai,.psd,.png,.jpg,.jpeg" style="display: none;">
+                </div>
+              </fieldset>
+
+              <button type="submit" class="btn btn--primary btn--large btn--full">Submit Quote Request</button>
+              <p class="text-center text-muted text-sm" style="margin-top: var(--space-sm);">
+                No obligation — we'll respond within one business day.
+              </p>
+            </form>
+
+            <!-- Success Message -->
+            <div class="form-success" id="quote-success">
+              <div class="form-success__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <h3 class="form-success__title">Quote Request Received</h3>
+              <p class="form-success__text">Thank you for your enquiry. Our team will review your project details and send a tailored quote to your inbox within one business day.</p>
+            </div>
+          </div>
+
+          <!-- TRUST SIDEBAR -->
+          <div class="trust-sidebar">
+
+            <!-- Our Promise -->
+            <div class="trust-promise">
+              <h3 class="trust-promise__title">Our Promise to You</h3>
+              <ul class="trust-promise__list">
+                <li class="trust-promise__item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Free, no-obligation quote</strong> — no hidden fees or commitments</span>
+                </li>
+                <li class="trust-promise__item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Reply within 1 business day</strong> — most quotes sent same day</span>
+                </li>
+                <li class="trust-promise__item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>Expert advice included</strong> — we help you choose the right materials</span>
+                </li>
+                <li class="trust-promise__item">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>
+                  <span><strong>ISO 9001 &amp; 14001 certified</strong> — quality and environmental standards</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- How It Works -->
+            <div class="trust-steps">
+              <h3 class="trust-steps__title">How It Works</h3>
+              <ol class="trust-steps__list">
+                <li class="trust-steps__step">
+                  <span class="trust-steps__number">1</span>
+                  <span class="trust-steps__text"><strong>Submit your request</strong> — fill out this form with your project details</span>
+                </li>
+                <li class="trust-steps__step">
+                  <span class="trust-steps__number">2</span>
+                  <span class="trust-steps__text"><strong>We review &amp; advise</strong> — our team assesses your needs and recommends the best approach</span>
+                </li>
+                <li class="trust-steps__step">
+                  <span class="trust-steps__number">3</span>
+                  <span class="trust-steps__text"><strong>Receive your quote</strong> — a detailed, itemised quote lands in your inbox</span>
+                </li>
+                <li class="trust-steps__step">
+                  <span class="trust-steps__number">4</span>
+                  <span class="trust-steps__text"><strong>Approve &amp; we produce</strong> — once confirmed, we move straight to production</span>
+                </li>
+              </ol>
+            </div>
+
+            <!-- Quick Contact CTA -->
+            <div class="trust-contact">
+              <h3 class="trust-contact__title">Need It Faster?</h3>
+              <p class="trust-contact__text">Call or WhatsApp us for an instant discussion about your project.</p>
+              <a href="https://wa.me/60167333229" class="btn btn--large" target="_blank" rel="noopener" style="width: 100%; justify-content: center;">
+                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 6px;"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                Chat on WhatsApp
+              </a>
+              <p style="font-size: 0.8125rem; opacity: 0.8; margin-top: var(--space-sm);">
+                <a href="tel:+6078613229" style="color: var(--white); text-decoration: underline;">+607-861 3229</a> &nbsp;·&nbsp; Mon–Fri 8AM–5PM
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <img src="assets/images/logo-white.png" alt="PTM Labels" width="140" height="40" style="height: 36px; width: auto;">
+            <p>Established in 2002, PTM Labels is a leading Malaysian manufacturer of self-adhesive labels and shrink sleeve labels, serving industries worldwide.</p>
+          </div>
+          <div>
+            <h4 class="footer__heading">Products</h4>
+            <ul class="footer__links">
+              <li><a href="products/adhesive-label.html">Adhesive Labels</a></li>
+              <li><a href="products/shrink-sleeve.html">Shrink Sleeves</a></li>
+              <li><a href="products/variable-data.html">Variable Data</a></li>
+              <li><a href="products/peel-reveal.html">Peel &amp; Reveal</a></li>
+              <li><a href="products/pop-up-label.html">Pop Up Labels</a></li>
+              <li><a href="products/other-products.html">Other Products</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer__heading">Company</h4>
+            <ul class="footer__links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="facilities.html">Facilities</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="request-quote.html">Request a Quote</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer__heading">Get in Touch</h4>
+            <ul class="footer__contact">
+              <li>4, 6, 8, 10 &amp; 12, Jalan Mahir 2, Taman Perindustrian Cemerlang, 81800 Ulu Tiram, Johor</li>
+              <li>+607-861 3229</li>
+              <li>enquiry@ptmlabels.com</li>
+              <li>Mon–Fri: 8AM–5PM, Sat: 8AM–1PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>&copy; 2026 PTM Labels Sdn Bhd. All rights reserved.</span>
+          <div class="footer__bottom-links">
+            <a href="legal/privacy-policy.html">Privacy Policy</a>
+            <a href="legal/terms-conditions.html">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="https://wa.me/60167333229" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact PTM Labels — Get in touch for label printing enquiries. Located in Ulu Tiram, Johor, Malaysia. 5-star Google rating.">
+  <title>Contact Us — PTM Labels</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div class="page">
+
+    <!-- NAVBAR -->
+    <header class="header" role="banner">
+      <div class="container">
+        <a href="index.html" class="header__logo" aria-label="PTM Labels — Home">
+          <img src="assets/images/logo.png" alt="PTM Labels" width="140" height="40">
+        </a>
+        <nav class="header__nav" aria-label="Main navigation">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="services.html">Services</a>
+          <a href="facilities.html">Facilities</a>
+          <a href="products.html">Products</a>
+          <a href="contact.html">Contact</a>
+          <a href="request-quote.html" class="header__cta">Get a Quote</a>
+        </nav>
+        <button class="header__toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero__content">
+          <p class="page-hero__breadcrumb">
+            <a href="index.html">Home</a><span class="sep">/</span>Contact
+          </p>
+          <h1 class="page-hero__title">Contact Us</h1>
+          <p class="page-hero__subtitle">
+            Have a question or need a quote? We'd love to hear from you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT CONTENT — demonstrates contact-card + section-heading + form -->
+    <section class="section">
+      <div class="container">
+        <div class="grid grid--60-40 grid--gap-2xl grid--align-start">
+
+          <!-- Contact Form -->
+          <div>
+            <div class="section-heading section-heading--left">
+              <span class="section-heading__label">Send an Enquiry</span>
+              <h2 class="section-heading__title">Get in Touch</h2>
+              <p class="section-heading__subtitle">Fill out the form below and our team will respond within one business day.</p>
+            </div>
+
+            <form id="contact-form">
+              <div class="grid grid--2">
+                <div class="form-group">
+                  <label for="name">Name</label>
+                  <input type="text" id="name" name="name" required placeholder="Your full name">
+                  <p class="form-group__error">Please enter your name.</p>
+                </div>
+                <div class="form-group">
+                  <label for="company">Company</label>
+                  <input type="text" id="company" name="company" placeholder="Your company name">
+                </div>
+              </div>
+              <div class="grid grid--2">
+                <div class="form-group">
+                  <label for="email">Email Address</label>
+                  <input type="email" id="email" name="email" required placeholder="you@company.com">
+                  <p class="form-group__error">Please enter a valid email address.</p>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Phone</label>
+                  <input type="tel" id="phone" name="phone" placeholder="+60 12-345 6789">
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required placeholder="Tell us about your labelling needs..."></textarea>
+                <p class="form-group__error">Please enter your message.</p>
+              </div>
+              <button type="submit" class="btn btn--primary btn--large btn--full">Send Enquiry</button>
+            </form>
+
+            <!-- Success Message (shown after submit, hidden by default) -->
+            <div class="form-success" id="contact-success">
+              <div class="form-success__icon">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
+              </div>
+              <h3 class="form-success__title">Enquiry Sent</h3>
+              <p class="form-success__text">Thank you for reaching out. Our team will get back to you within one business day.</p>
+            </div>
+          </div>
+
+          <!-- CONTACT CARD + MAP SIDEBAR -->
+          <div>
+            <div class="contact-card">
+              <h3 class="contact-card__title">Our Office</h3>
+
+              <div class="contact-card__item">
+                <div class="contact-card__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                </div>
+                <div>
+                  <p class="contact-card__label">Address</p>
+                  <p class="contact-card__value">4, 6, 8, 10 &amp; 12, Jalan Mahir 2, Taman Perindustrian Cemerlang, 81800 Ulu Tiram, Johor, Malaysia</p>
+                </div>
+              </div>
+
+              <div class="contact-card__item">
+                <div class="contact-card__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                </div>
+                <div>
+                  <p class="contact-card__label">Phone</p>
+                  <p class="contact-card__value"><a href="tel:+6078613229">+607-861 3229</a></p>
+                </div>
+              </div>
+
+              <div class="contact-card__item">
+                <div class="contact-card__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                </div>
+                <div>
+                  <p class="contact-card__label">Email</p>
+                  <p class="contact-card__value"><a href="mailto:enquiry@ptmlabels.com">enquiry@ptmlabels.com</a></p>
+                </div>
+              </div>
+
+              <div class="contact-card__item">
+                <div class="contact-card__icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                </div>
+                <div>
+                  <p class="contact-card__label">Business Hours</p>
+                  <p class="contact-card__value">Mon–Fri: 8:00 AM – 5:00 PM<br>Saturday: 8:00 AM – 1:00 PM</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Google Reviews Trust Signal -->
+            <div class="reviews-badge" style="margin-top: var(--space-lg);">
+              <div class="reviews-badge__stars">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              </div>
+              <p class="reviews-badge__score">5.0 on Google</p>
+              <p class="reviews-badge__count">Based on 224 reviews</p>
+            </div>
+
+            <!-- Map Placeholder -->
+            <div class="map-placeholder" style="margin-top: var(--space-lg);">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              <span>Google Maps embed here</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BAND — dark variant -->
+    <section class="cta-band cta-band--dark">
+      <div class="container">
+        <h2 class="cta-band__title">Prefer to Chat?</h2>
+        <p class="cta-band__text">Reach us instantly on WhatsApp for quick questions about your labelling project.</p>
+        <div class="cta-band__actions">
+          <a href="https://wa.me/6078613229" class="btn btn--primary btn--large" target="_blank" rel="noopener">Chat on WhatsApp</a>
+          <a href="request-quote.html" class="btn btn--outline-light btn--large">Request a Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer" role="contentinfo">
+      <div class="container">
+        <div class="footer__grid">
+          <div class="footer__brand">
+            <img src="assets/images/logo-white.png" alt="PTM Labels" width="140" height="40" style="height: 36px; width: auto;">
+            <p>Established in 2002, PTM Labels is a leading Malaysian manufacturer of self-adhesive labels and shrink sleeve labels, serving industries worldwide.</p>
+          </div>
+          <div>
+            <h4 class="footer__heading">Products</h4>
+            <ul class="footer__links">
+              <li><a href="products/adhesive-label.html">Adhesive Labels</a></li>
+              <li><a href="products/shrink-sleeve.html">Shrink Sleeves</a></li>
+              <li><a href="products/variable-data.html">Variable Data</a></li>
+              <li><a href="products/peel-reveal.html">Peel &amp; Reveal</a></li>
+              <li><a href="products/pop-up-label.html">Pop Up Labels</a></li>
+              <li><a href="products/other-products.html">Other Products</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer__heading">Company</h4>
+            <ul class="footer__links">
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="facilities.html">Facilities</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="request-quote.html">Request a Quote</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="footer__heading">Get in Touch</h4>
+            <ul class="footer__contact">
+              <li>No 6 &amp; 8, Jalan Mahir 2, Taman Perindustrian Cemerlang, 81800 Ulu Tiram, Johor</li>
+              <li>+607-861 3229</li>
+              <li>enquiry@ptmlabels.com</li>
+              <li>Mon–Fri: 8AM–5PM, Sat: 8AM–1PM</li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <span>&copy; 2026 PTM Labels Sdn Bhd. All rights reserved.</span>
+          <div class="footer__bottom-links">
+            <a href="legal/privacy-policy.html">Privacy Policy</a>
+            <a href="legal/terms-conditions.html">Terms &amp; Conditions</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <a href="https://wa.me/6078613229" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
