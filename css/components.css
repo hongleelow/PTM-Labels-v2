@@ -1644,6 +1644,127 @@
 
 
 /* ========================================
+   TESTIMONIAL CARDS
+   Blockquote cards for Google Reviews on homepage.
+   ======================================== */
+
+.testimonial-card {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow var(--transition);
+}
+
+.testimonial-card:hover {
+  box-shadow: var(--shadow-md);
+}
+
+.testimonial-card__stars {
+  display: flex;
+  gap: 2px;
+}
+
+.testimonial-card__stars svg {
+  width: 16px;
+  height: 16px;
+  fill: var(--accent);
+  stroke: none;
+}
+
+.testimonial-card__text {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--gray-700);
+  font-style: italic;
+  margin: 0;
+  flex: 1;
+}
+
+.testimonial-card__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+.testimonial-card__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  background: var(--primary-50);
+  color: var(--primary);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.testimonial-card__name {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: var(--gray-800);
+}
+
+.testimonial-card__source {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Inline Google Rating Badge */
+.google-rating-inline {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--space-sm) var(--space-lg);
+  background: var(--gray-50);
+  border: 1px solid var(--gray-200);
+  border-radius: var(--radius-full);
+  text-decoration: none;
+  color: var(--text-light);
+  font-size: 0.875rem;
+  transition: all var(--transition);
+}
+
+.google-rating-inline:hover {
+  background: var(--white);
+  box-shadow: var(--shadow-sm);
+  color: var(--text);
+}
+
+.google-rating-inline__stars {
+  display: flex;
+  gap: 1px;
+}
+
+.google-rating-inline__stars svg {
+  width: 14px;
+  height: 14px;
+  fill: var(--accent);
+  stroke: none;
+}
+
+.google-rating-inline__text strong {
+  color: var(--gray-800);
+}
+
+/* Mobile: stack testimonials */
+@media (max-width: 768px) {
+  .testimonial-card {
+    padding: var(--space-lg);
+  }
+}
+
+
+/* ========================================
    MAP PLACEHOLDER
    Dashed box for Google Maps embed.
    ======================================== */
