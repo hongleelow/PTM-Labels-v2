@@ -5,6 +5,8 @@ import { industries } from "@/data/industries";
 
 export const metadata: Metadata = {
   title: "Industries We Serve",
+  description:
+    "PTM Labels manufactures custom labels for food & beverage, pharmaceuticals, cosmetics, and logistics industries. ISO-certified quality for every sector.",
 };
 
 export default function IndustriesPage() {

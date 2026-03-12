@@ -4,6 +4,7 @@ import "./globals.css";
 import { Navbar } from "@/components/layout/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { MobileCTA } from "@/components/ui/MobileCTA";
+import { LocalBusinessJsonLd } from "@/components/seo/JsonLd";
 import { siteConfig } from "@/data/siteConfig";
 
 const heading = Plus_Jakarta_Sans({
@@ -21,6 +22,7 @@ const body = Inter({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.url),
   title: {
     default: `${siteConfig.name} — ${siteConfig.tagline}`,
     template: `%s | ${siteConfig.name}`,
@@ -44,6 +46,13 @@ export const metadata: Metadata = {
     title: `${siteConfig.name} — ${siteConfig.tagline}`,
     description: siteConfig.description,
   },
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 };
 
 export default function RootLayout({
@@ -54,6 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${heading.variable} ${body.variable}`}>
       <body>
+        <LocalBusinessJsonLd />
         <Navbar />
         <main className="pb-16 md:pb-0">{children}</main>
         <Footer />

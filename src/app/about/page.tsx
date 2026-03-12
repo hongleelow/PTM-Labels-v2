@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/Button";
 
 export const metadata: Metadata = {
   title: "About PTM Labels",
+  description:
+    "Malaysia's trusted label manufacturer since 2002. ISO 9001 & 14001 certified, 20+ years of experience, serving clients across Southeast Asia from our Johor facility.",
 };
 
 export default function AboutPage() {
