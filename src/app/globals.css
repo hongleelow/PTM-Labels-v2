@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FAFBFC;
+  --foreground: #0A1628;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-ptm-white text-ptm-navy font-body;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold text-ptm-navy;
+  }
+}
+
+@layer components {
+  .container-main {
+    @apply mx-auto max-w-container px-5 sm:px-6 lg:px-8;
+  }
+
+  .container-narrow {
+    @apply mx-auto max-w-container-narrow px-5 sm:px-6 lg:px-8;
+  }
+
+  .section-padding {
+    @apply py-section-sm lg:py-section;
+  }
+
+  .section-padding-sm {
+    @apply py-12 lg:py-16;
+  }
+}
