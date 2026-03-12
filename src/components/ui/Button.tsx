@@ -15,7 +15,7 @@ interface ButtonProps {
 
 const variantStyles: Record<ButtonVariant, string> = {
   primary:
-    "bg-ptm-accent text-ptm-navy font-semibold hover:bg-ptm-accent-light shadow-button",
+    "bg-ptm-accent text-white font-semibold hover:bg-ptm-accent-light shadow-button",
   secondary:
     "bg-ptm-blue text-white font-semibold hover:bg-ptm-blue-light shadow-button",
   ghost:

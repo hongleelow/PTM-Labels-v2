@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { siteConfig } from "@/data/siteConfig";
 import { Button } from "@/components/ui/Button";
@@ -35,11 +36,15 @@ export function Navbar() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Logo + tagline */}
-        <Link href="/" className="flex flex-col" onClick={closeMobile}>
-          <span className="font-heading text-xl font-bold text-ptm-navy">
-            {siteConfig.name}
-          </span>
-          <span className="text-caption text-ptm-slate-light">To Care</span>
+        <Link href="/" className="flex items-center" onClick={closeMobile}>
+          <Image
+            src="/images/ptm-logo.png"
+            alt="PTM Labels"
+            width={120}
+            height={60}
+            className="h-10 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop navigation */}

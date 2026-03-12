@@ -9,7 +9,7 @@ export function MobileCTA() {
       <div className="flex gap-3">
         <Link
           href="/quote"
-          className="flex-1 rounded-button bg-ptm-accent py-3 text-center text-body-sm font-semibold text-ptm-navy transition-colors hover:bg-ptm-accent-light"
+          className="flex-1 rounded-button bg-ptm-accent py-3 text-center text-body-sm font-semibold text-white transition-colors hover:bg-ptm-accent-light"
         >
           Request a Quote
         </Link>

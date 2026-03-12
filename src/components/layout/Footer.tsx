@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { siteConfig } from "@/data/siteConfig";
 
 export function Footer() {
@@ -11,7 +12,13 @@ export function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-3">
           {/* Column 1: Company info + certifications */}
           <div className="flex flex-col gap-4">
-            <h3 className="font-heading text-lg font-bold">{siteConfig.name}</h3>
+            <Image
+              src="/images/ptm-logo.png"
+              alt="PTM Labels"
+              width={120}
+              height={60}
+              className="h-10 w-auto brightness-0 invert"
+            />
             <p className="text-body-sm leading-relaxed text-white/80">
               {briefDescription}
             </p>
